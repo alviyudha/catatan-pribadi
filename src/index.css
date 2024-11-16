@@ -1,0 +1,145 @@
+
+.catatan-app-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    justify-items: center;
+    justify-content: center;
+  }
+  
+.note-input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 16px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title-counter {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #666;
+    text-align: right;
+}
+
+.note-input__title,
+.note-input__body {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.note-input__title {
+    font-weight: bold;
+}
+
+.note-input__body {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.note-input__button {
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.note-input__button:hover {
+    background-color: #45a049;
+}
+
+
+
+
+.note-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+  }
+  
+  .note-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 12px;
+    margin: 0;
+    width: calc(25% - 16px); 
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .note-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .note-item h3 {
+    margin: 0 0 8px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .note-item p {
+    margin: 4px 0;
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .note-item__delete {
+    margin-top: 8px;
+    padding: 8px 16px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.2s;
+  }
+  
+  .note-item__delete:hover {
+    background-color: #c0392b;
+  }
+  
+  .note-item__archive {
+    margin-top: 8px;
+    margin-left: 8px;
+    padding: 8px 16px;
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.2s;
+  }
+  
+  .note-item__archive:hover {
+    background-color: #e67e22;
+  }
+
+  .search-bar {
+    margin: 16px 0;
+  }
+  
+  .search-bar__input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
